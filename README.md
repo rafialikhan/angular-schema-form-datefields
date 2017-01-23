@@ -63,5 +63,3 @@ scope.schema = {
                     "required": ["DOB"]
             };
 ```
-
-Note: If you want to pre-populate the datefields, you can pass it through the defaultDate in the schema, make sure you add the timezone when passing default Date. 
