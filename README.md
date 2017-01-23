@@ -31,11 +31,14 @@ Year Order default is ascending, dont pass anything if you are ok with this.
 TimeZone and Default Date
 --------------------------
 Timezone by default is the client's timezone. 
-Please pass timezone: "0" for DOBs to get actual date, else the timezone stamp will fall back by 1 date depending on geography and may not validate.
-Set default time with defaultDate.
+Please pass timezone: "0" the timezone stamp will fall back by 1 day depending on geography and may not validate.
+Set default time with setDate.
+
+* setDate requires timezone also to be passed. Also timezone alone cannot be passed without the setDate.
+(feature inherited from Angular Combo Date Picker) 
 
 ```
-                            "defaultDate": "2000-01-01",
+                            "setDate": "2000-01-01",
                             "timezone": "0",
 ````
 
@@ -60,4 +63,4 @@ scope.schema = {
             };
 ```
 
-If you want to prepopulate the datefields, you will have to pass the date as a form. (not tested)
+Note: If you want to pre-populate the datefields, you can pass it through the defaultDate in the schema, make sure you add the timezone when passing default Date. 
