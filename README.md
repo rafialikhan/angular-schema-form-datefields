@@ -6,7 +6,7 @@ Installation
 
 The easiest way is to install is with bower, this will also include dependencies:
 ```bash
-bower install angular-schema-form-datefields
+bower install angular-schema-form-datefields --save
 ```
 
 The datefields add-on adds a new form type, `datefields`.
@@ -38,6 +38,7 @@ scope.schema = {
                             "type":"string",
                             "title":"Date of Birth",
                             "format":"datefields",
+                            "setDate": "1977-05-25",
                             "minDate": "1940-01-01",
                             "maxDate": "2017-01-01",
                             "yearOrder"="desc",
