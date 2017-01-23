@@ -56,7 +56,8 @@ scope.schema = {
                             "minDate": "1940-01-01",
                             "maxDate": "2017-01-01",
                             "order": "dmy",
-                            "yearOrder": "desc"
+                            "yearOrder": "desc",
+                            "description": "Provide your date in Day / Month / Year format"
                         }
                     },
                     "required": ["DOB"]
