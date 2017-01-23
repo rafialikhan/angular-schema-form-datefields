@@ -2,7 +2,7 @@
 	<label class="control-label" ng-show="showTitle()">{{form.title}}</label>
     <div>
 
-		<ng-combo-date-picker ng-model="$$value$$" ng-date="{{form.schema.defaultDate}}" ng-year-order="{{form.schema.yearOrder}}" ng-timezone="{{form.schema.timezone || '0'}}"
+		<ng-combo-date-picker ng-model="$$value$$" ng-date="{{form.schema.defaultDate}}" ng-year-order="{{form.schema.yearOrder}}" ng-timezone="{{form.schema.timezone}}"
 		ng-min-date="{{form.schema.minDate}}" ng-min-date="{{form.schema.maxDate}}" ng-order="{{(form.schema.order || 'mdy')}}"></ng-combo-date-picker>
 
     </div>
