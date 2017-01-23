@@ -27,6 +27,8 @@ Below is an example. It's written in javascript instead of pure schema and form 
 maxDate is optional, as current year will be taken. 
 Default order is "mdy" (Month Day and Year), dont pass anything if you are ok with this. Options are "ymd","mdy","dmy".
 Year Order default is ascending, dont pass anything if you are ok with this.
+Timezone by default is -23. Please pass 0 for DOBs else the timezone stamp will fall back by 1 date.
+
 
 ```javascript
 scope.schema = {
@@ -39,7 +41,8 @@ scope.schema = {
                             "minDate": "1940-01-01",
                             "maxDate": "2017-01-01",
                             "yearOrder"="desc",
-                            "order": "dmy"
+                            "order": "dmy",
+                            "timezone": "0"
                         }
                     },
                     "required": ["DOB"]
