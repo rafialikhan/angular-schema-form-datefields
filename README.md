@@ -27,9 +27,20 @@ Below is an example. It's written in javascript instead of pure schema and form 
 maxDate is optional, as current year will be taken. 
 Default order is "mdy" (Month Day and Year), dont pass anything if you are ok with this. Options are "ymd","mdy","dmy".
 Year Order default is ascending, dont pass anything if you are ok with this.
-Timezone by default is the client's timezone. Please pass timezone: "0" for DOBs to get actual date, else the timezone stamp will fall back by 1 date depending on geography and may not validate.
+
+TimeZone and Default Date
+--------------------------
+Timezone by default is the client's timezone. 
+Please pass timezone: "0" for DOBs to get actual date, else the timezone stamp will fall back by 1 date depending on geography and may not validate.
 Set default time with defaultDate.
 
+```
+                            "defaultDate": "2000-01-01",
+                            "timezone": "0",
+````
+
+Schema 
+----------
 
 ```javascript
 scope.schema = {
@@ -39,12 +50,10 @@ scope.schema = {
                             "type":"string",
                             "title":"Date of Birth",
                             "format":"datefields",
-                            "defaultDate": "1977-05-25",
                             "minDate": "1940-01-01",
                             "maxDate": "2017-01-01",
-                            "yearOrder"="desc",
                             "order": "dmy",
-                            "timezone": "0"
+                            "yearOrder": "desc"
                         }
                     },
                     "required": ["DOB"]
