@@ -2,7 +2,8 @@
 	<label class="control-label" ng-show="showTitle()">{{form.title}}</label>
     <div>
 
-		<ng-combo-date-picker ng-model="$$value$$" ng-date="form.schema.defaultDate" ng-min-date="form.schema.minDate" ng-min-date="form.schema.maxDate" ng-order="(form.schema.order || 'mdy')"></ng-combo-date-picker>
+		<ng-combo-date-picker ng-model="$$value$$" ng-date="{{form.schema.defaultDate}}" 
+		ng-min-date="{{form.schema.minDate}}" ng-min-date="{{form.schema.maxDate}}" ng-order="{{(form.schema.order || 'mdy')}}"></ng-combo-date-picker>
 
     </div>
     <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || (form.schema.description || form.description)}}</span>
