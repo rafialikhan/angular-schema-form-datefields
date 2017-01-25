@@ -5,9 +5,23 @@ Installation
 ------------
 
 The easiest way is to install is with bower, this will also include dependencies:
+
 ```bash
 bower install angular-schema-form-datefields --save
 ```
+Important
+---------
+As this plugin depends on the ngComboDatePicker, you will need to inject this dependency into your app.js
+
+```
+angular
+  .module('otesFormsApp', [
+    ...
+    'ngComboDatePicker'
+  ])
+
+```
+
 
 The datefields add-on adds a new form type, `datefields`.
 
