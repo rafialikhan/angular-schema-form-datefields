@@ -20,10 +20,8 @@ The datefields add-on adds a new form type, `datefields`.
 |:-------------------|:------------:|
 | "type": "string" and "format": "datefields"   |   datefields   |
 
-Example
+Options
 -----------------
-Below is an example. It's written in javascript instead of pure schema and form so the use of the download object is supported.
-
 maxDate is optional, as current year will be taken. 
 Default order is "mdy" (Month Day and Year), dont pass anything if you are ok with this. Options are "ymd","mdy","dmy".
 Year Order default is ascending, dont pass anything if you are ok with this.
