@@ -1,9 +1,10 @@
 <div class="form-group schema-form-datefields" ng-class="{'has-error': hasError()}">
 	<label class="control-label" ng-show="showTitle()">{{form.title}}</label>
-    <div>
-
+    
+    <div class="schema-form-datefields-container">
 		<ng-combo-date-picker ng-model="$$value$$" ng-date="{{form.schema.setDate}}" ng-year-order="{{form.schema.yearOrder}}" ng-timezone="{{form.schema.timezone}}" ng-date="{{form.schema.defaultDate}}"	ng-min-date="{{form.schema.minDate}}" ng-min-date="{{form.schema.maxDate}}" ng-order="{{(form.schema.order || 'mdy')}}"></ng-combo-date-picker>
 
     </div>
+
     <span class="help-block">{{ (hasError() && errorMessage(schemaError())) || (form.schema.description || form.description)}}</span>
 </div>
