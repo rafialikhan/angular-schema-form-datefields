@@ -69,6 +69,7 @@ scope.schema = {
                             "maxDate": "2017-01-01",
                             "order": "dmy",
                             "yearOrder": "desc",
+                            "required" : "true",
                             "description": "Provide your date in Day / Month / Year format"
                         }
                     },
