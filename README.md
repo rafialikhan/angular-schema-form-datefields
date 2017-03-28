@@ -40,19 +40,19 @@ maxDate is optional, as current year will be taken.
 Default order is "mdy" (Month Day and Year), dont pass anything if you are ok with this. Options are "ymd","mdy","dmy".
 Year Order default is ascending, dont pass anything if you are ok with this.
 
-TimeZone and Default Date
---------------------------
-Timezone by default is the client's timezone. 
-Please pass timezone: "0" the timezone stamp will fall back by 1 day depending on geography and may not validate.
-Set default time with setDate.
+#TimeZone and Default Date
+#--------------------------
+#Timezone by default is the client's timezone. 
+#Please pass timezone: "0" the timezone stamp will fall back by 1 day depending on geography and may not #validate.
+#Set default time with setDate.
 
-* setDate requires timezone also to be passed. Also timezone alone cannot be passed without the setDate.
-(feature inherited from Angular Combo Date Picker) 
+#* setDate requires timezone also to be passed. Also timezone alone cannot be passed without the setDate.
+#(feature inherited from Angular Combo Date Picker) 
 
-```
-                            "setDate": "2000-01-01",
-                            "timezone": "0",
-````
+#```
+#                            "setDate": "2000-01-01",
+#                            "timezone": "0",
+#````
 
 Schema 
 ----------
