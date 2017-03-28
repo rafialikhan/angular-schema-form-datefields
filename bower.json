@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "angular-schema-form": ">= 0.7",
-    "ng_combodatepicker_custom": "*"
+    "ngComboDateStringPicker": "*"
   },
   "devDependencies": {
     "angular-schema-form": ">= 0.7",
